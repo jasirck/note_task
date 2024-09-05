@@ -47,12 +47,15 @@ A simple Note Management API built with Django, providing endpoints to create, f
     ```env
     DJANGO_SECRET_KEY=your_secret_key_here
     DJANGO_DEBUG=True
-    DATABASE_URL=postgres://yourusername:yourpassword@yourhost:yourport/yourdatabase
+    DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
+    DATABASE_URL=postgres://avnadmin:AVNS_4yaFjBiTHFUmUyQOOv-@pg-2ca95254-muhammedjasirstd- 
+    c8cf.e.aivencloud.com:15469/defaultdb?sslmode=require
     ```
 
 5. **Run Migrations**:
 
     ```bash
+    python manage.py makemigrations
     python manage.py migrate
     ```
 
