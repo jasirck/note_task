@@ -69,10 +69,10 @@ A simple Note Management API built with Django, providing endpoints to create, f
 
 ## Endpoints
 
-- **Create a new note**: `POST /notes/`
-- **Fetch a note by ID**: `GET /notes/<id>/`
-- **Query notes by title substring**: `GET /notes?title=<substring>`
-- **Update a note**: `PUT /notes/<id>/`
+- **Create a new note**: `POST api//notes/`
+- **Fetch a note by ID**: `GET api//notes/<id>/`
+- **Query notes by title substring**: `GET api//notes?title=<substring>`
+- **Update a note**: `PUT api//notes/<id>/`
 
 ## Testing
 
