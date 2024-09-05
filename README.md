@@ -48,8 +48,7 @@ A simple Note Management API built with Django, providing endpoints to create, f
     DJANGO_SECRET_KEY=your_secret_key_here
     DJANGO_DEBUG=True
     DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
-    DATABASE_URL=postgres://avnadmin:AVNS_4yaFjBiTHFUmUyQOOv-@pg-2ca95254-muhammedjasirstd- 
-    c8cf.e.aivencloud.com:15469/defaultdb?sslmode=require
+    DATABASE_URL=postgres://avnadmin:AVNS_4yaFjBiTHFUmUyQOOv-@pg-2ca95254-muhammedjasirstd-c8cf.e.aivencloud.com:15469/defaultdb?sslmode=require
     ```
 
 5. **Run Migrations**:
@@ -69,10 +68,10 @@ A simple Note Management API built with Django, providing endpoints to create, f
 
 ## Endpoints
 
-- **Create a new note**: `POST api//notes/`
-- **Fetch a note by ID**: `GET api//notes/<id>/`
-- **Query notes by title substring**: `GET api//notes?title=<substring>`
-- **Update a note**: `PUT api//notes/<id>/`
+- **Create a new note**: `POST api/notes/`
+- **Fetch a note by ID**: `GET api/notes/<int:pk>/`
+- **Query notes by title substring**: `GET api/notes/search/?title=<substring>`
+- **Update a note**: `PUT api/notes/<int:pk>/update/`
 
 ## Testing
 
